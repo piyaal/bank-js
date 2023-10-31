@@ -1,23 +1,21 @@
 document.getElementById('btn-submit').addEventListener('click',function(){
-//console.log('submit button clicked'); 
+//console .log('submit button clicked'); 
 
 //step2 get the email add inside the email input field
 //alwAYS remember to us .value to get text from input field
 
   const emailField=document.getElementById('user-email');
+  //always remember  to use .value to get text from an input field
 const email=emailField.value;
-console.log(email);
-})
 
-//set id on the html ele,emnt for passwprd
+//set id on th e html ele,emnt for passwprd
 
 const passwordField=document.getElementById('user-password');
 const password=passwordField.value;
-console.log(password);
-
+if(email==='hasan@gmail.com' && password === 'buba') {
+    window.location.href='bank.html'; }
+    else{
+    console.log('invalid user') }
+//console.log(email,pass)
+})
 //verify email and passwprd
-if(email==='hasan@gmail.com' && password==='secret'){
-    console.log('valid user')
-}
-else
-console.log('invalid user');
